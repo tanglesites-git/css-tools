@@ -1,0 +1,31 @@
+.main-body {
+    display: grid;
+    grid-template-columns: 15rem auto 15rem;
+}
+
+.left-container {
+    margin-block-start: -4rem;
+}
+
+.inner-container {
+    padding-top: 4rem;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: calc(100dvh);
+    display: flex;
+    flex-direction: column;
+}
+
+/* main {
+    background-color: yellow;
+} */
+
+.right-container {
+    margin-block-start: -4rem;
+}
+
+.left-inner-container {
+    overflow-y: scroll;
+    overscroll-behavior: contain;
+}

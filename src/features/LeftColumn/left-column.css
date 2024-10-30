@@ -1,0 +1,27 @@
+.color-row {
+    border-bottom: 1px solid rgb(219, 219, 219);
+    border-right: 1px solid rgb(219, 219, 219);
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    cursor: pointer;
+
+    & span {
+        display: block;
+    }
+
+    & span:first-child {
+        grid-column: 1 / 2;
+        width: 22px;
+        height: 22px;
+        grid-row: 1 / 2;
+    }
+
+    & span:last-child {
+        grid-column: 2 / -1;
+        grid-row: 1 / 2;
+        font-weight: 400;
+        text-transform: lowercase;
+    }
+}
